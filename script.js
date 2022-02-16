@@ -11,6 +11,14 @@ const balance = document.getElementById('balance');
 const balanceText = balance.innerText;
 const income = document.getElementById('income');
 const incomeText = income.value;
+const save = document.getElementById('saving-input');
+const saveValue = save.value;
+const savingAmount = document.getElementById('saving-amount');
+const saveAmountText = savingAmount.innerText;
+const remaining = document.getElementById('remaining');
+const remainingBalance = remaining.innerText; 
+
+
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
         const food = makeValue('food-input');
@@ -31,5 +39,12 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         
          const minusResult = parseFloat(income.value) - parseFloat(expenses.innerText);
         balance.innerText = minusResult;
-        console.log(balance.innerText);
+
+})
+document.getElementById('save-btn').addEventListener('click', function () {
+        const savingResult = parseFloat(income.value) * (parseFloat(save.value)) / 100;
+        savingAmount.innerText = savingResult;
+        const finaleResult = balance.innerText - savingAmount.innerText;
+        remaining.innerText = finaleResult;
+        
 })
