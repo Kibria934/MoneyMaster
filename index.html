@@ -37,24 +37,25 @@
                                 <!-- Expenses part -->
                                 <div class="mt-3 d-flex justify-content-center align-items-center flex-column">
                                         <h3 class="mb-4 ">Expenses</h3>
-                                        <p><span class="fs-4">Foods: </span><input class="income-box p-2 ms-2"  type="text" name="" id=""></p>
-                                        <p><span class="fs-4">Rent: </span><input class="income-box ms-3 p-2"  type="text" name="" id=""></p>
-                                        <p><span class="fs-4">Cloths: </span><input class="income-box p-2"  type="text" name="" id=""></p>
+                                        <p><span class="fs-4">Foods: </span><input class="income-box p-2 ms-2"  type="text" name=""  value = "" id="food-input"></p>
+                                        <p><span class="fs-4">Rent: </span><input class="income-box ms-3 p-2"  type="text" name="" value = ""id="rent-input"></p>
+                                        <p><span class="fs-4">Cloths: </span><input class="income-box p-2"  type="text" name="" value = ""id="cloths-input"></p>
+
                                         <!-- Calculate Button -->
-                                        <span type="button" class="btn btn-primary text-center px-5 py-2 fw-semi-bold mt-3 btn-common fs-3">Calculate</span>
+                                        <span type="button" id="calculate-btn" class="btn btn-primary text-center px-5 py-2 fw-semi-bold mt-3 btn-common fs-3">Calculate</span>
                                 </div>
                                         <!-- Total content here -->
-                                <h2 class="mt-4 text-black text-center  ">Total Expenses: <span>0</span></h2>
+                                <h2 class="mt-4 text-black text-center  ">Total Expenses: <span id="total-expenses">0</span></h2>
                                 <h2 class="mt-3 text-black text-center">Balance: <span>0</span></h2>
                                     <!-- Savinng Part -->
                                     <div class="row mt-4 mb-4 ">
-                                 <div class="col-12 col-sm-12 col-md-5">
+                                 <div class="col-12 col-sm-12 col-md-5 col-lg-5">
                                          <p class=""><span class="fs-4 w-25 ">Save: </span><input class="income-box p-3 w-75 "  type="text" name="" id=""></p>
                                         </div>
-                                        <div class="col-12 col-sm-12 col-md-2">
+                                        <div class="col-12 col-sm-12 col-md-2 col-lg-2">
                                          <p class="w-100 text-center fs-2">%</p>
                                           </div>
-                                         <div class="col-12 col-sm-12 col-md-5">
+                                         <div class="col-12 col-sm-12 col-md-5 col-lg-5">
                                           <span type="button" class="btn btn-primary w-100 text-center px-5 py-2 fw-semi-bold fs-3">Calculate</span>       
                                          </div>
                                 </div>
