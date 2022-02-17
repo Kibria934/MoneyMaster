@@ -42,7 +42,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         // Income box error
                 if (typeof ((parseFloat(income.value))) != 'number' || isNaN(income.value) == true || income.value == '' || parseFloat(income.value) < 0) {
                 balance.innerText = ''
-                alert('Please valid number in income box')
+                alert('Please enter valid number in income box')
         }
         // Input box error
 
