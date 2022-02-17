@@ -32,7 +32,8 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         // Total expeses calculates        
                 const sum = getValueAndFloat('food') + getValueAndFloat('rent') +  getValueAndFloat('cloths');
                  expensesText = sum;
-                 expenses.innerText = expensesText;
+        expenses.innerText = expensesText;
+        console.log(expenses.innerText);
           // Total balance calculates
                 const minusResult = parseFloat(income.value) - parseFloat(expenses.innerText);
         balance.innerText = minusResult;
@@ -56,9 +57,11 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
                 balance.innerText = '';
                 alert('Plese enter valid number in input field')
         }
-        if (parseFloat(expenses.innerText) >parseFloat( balance.innerText)) {
+        if (sum > income.value) {
                 balance.innerText = '';
-                 expenses.innerText = '';
+                expenses.innerText = '';
+                                console.log(expenses.innerText);
+
                 alert('Your cost is grater than your income')
         }
   
@@ -74,7 +77,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
                 savingAmount.innerText = '';
                 remaining.innerText = '';
                 alert('Please enter a valid number')
-        }
+        } 
         else {
                 
                 savingAmount.innerText = savingResult;
